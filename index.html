@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/app.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Train Schedule</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 id="title">Train Schedule</h1>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel panel-header">Current Train Schedule</div>
+                <div class="panel panel-body trainInfo"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel panel-header">Add A Train</div>
+                <div class="panel panel-body">
+                    <div>Train Name</div>
+                    <input id="trainName" type="text">
+                    <div>Destination</div>
+                    <input id="dest" type="text">
+                    <div>First Train Time(HH:mm-military time)</div>
+                    <input id="firstTime" type="text">
+                    <div>Frequency (minutes)</div>
+                    <input id="freq" type="number">
+                    <br>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
